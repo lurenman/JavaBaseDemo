@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.dell.javabasedemo.activity.AnnotationActivity;
 import com.example.dell.javabasedemo.activity.BitOperationActivity;
 import com.example.dell.javabasedemo.activity.CollectionActivity;
+import com.example.dell.javabasedemo.activity.GenericActivity;
 import com.example.dell.javabasedemo.activity.QueueActivity;
 import com.example.dell.javabasedemo.activity.ReflectionActivity;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bt_Queue;
     private Button bt_reflection;
     private Button bt_annotation;
+    private Button bt_generic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +33,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_collection = (Button) findViewById(R.id.bt_collection);
         bt_Queue = (Button) findViewById(R.id.bt_Queue);
         bt_reflection = (Button) findViewById(R.id.bt_reflection);
+        bt_generic = (Button) findViewById(R.id.bt_generic);
         bt_annotation = (Button) findViewById(R.id.bt_annotation);
 
         bt_bit_operations.setOnClickListener(this);
         bt_collection.setOnClickListener(this);
         bt_Queue.setOnClickListener(this);
         bt_reflection.setOnClickListener(this);
+        bt_generic.setOnClickListener(this);
         bt_annotation.setOnClickListener(this);
     }
 
@@ -54,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_reflection:
                 startActivity(new Intent(mContext, ReflectionActivity.class));
+                break;
+            case R.id.bt_generic:
+                startActivity(new Intent(mContext, GenericActivity.class));
                 break;
             case R.id.bt_annotation:
                 startActivity(new Intent(mContext, AnnotationActivity.class));

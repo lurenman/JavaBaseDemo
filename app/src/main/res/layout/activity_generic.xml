@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
+
+    <Button
+        android:id="@+id/btn_characteristics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="特性" />
+
+    <Button
+        android:id="@+id/btn_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="泛型类" />
+    <Button
+        android:id="@+id/btn_interface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="泛型接口" />
+    <Button
+        android:id="@+id/btn_wildcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="泛型通配符" />
+    <Button
+        android:id="@+id/btn_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="泛型方法" />
+</LinearLayout>

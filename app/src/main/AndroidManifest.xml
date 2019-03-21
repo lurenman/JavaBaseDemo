@@ -21,6 +21,7 @@
         <activity android:name=".activity.QueueActivity" />
         <activity android:name=".activity.ReflectionActivity" />
         <activity android:name=".activity.AnnotationActivity" />
+        <activity android:name=".activity.GenericActivity" />
     </application>
 
 </manifest>
