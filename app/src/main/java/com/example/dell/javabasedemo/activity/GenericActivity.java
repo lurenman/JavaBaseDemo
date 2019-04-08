@@ -9,6 +9,7 @@ import com.example.dell.javabasedemo.R;
 import com.example.dell.javabasedemo.generic.Generator;
 import com.example.dell.javabasedemo.generic.GeneratorMethod;
 import com.example.dell.javabasedemo.generic.GenericClass;
+import com.example.dell.javabasedemo.generic.GenericClass1;
 import com.example.dell.javabasedemo.generic.InterfaceClass;
 import com.example.dell.javabasedemo.generic.WildcardA;
 
@@ -166,6 +167,7 @@ public class GenericActivity extends BaseActivity {
                 return 4444;
             }
         });
+        GeneratorMethod.foo10(new GenericClass1<GenericClass1>("子类"));
     }
     //泛型数组略
 }

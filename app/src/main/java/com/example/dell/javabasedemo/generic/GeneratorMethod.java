@@ -100,11 +100,21 @@ public class GeneratorMethod<T> {
 
     /**
      * 泛型下边界
+     *
      * @param generator
      */
     public static void foo9(Generator<? super Integer> generator) {
         Object next = generator.next();
         String simpleName = next.getClass().getSimpleName();
         Log.e(TAG, "foo9: " + simpleName + ":" + next);
+    }
+
+    public static <T extends GenericClass<T>> void foo10(GenericClass<T> genericClass) {
+//        T key = genericClass.getKey();
+//        Log.e(TAG, "foo10: " + key.getClass().getSimpleName() + ":" + key);
+        if (genericClass instanceof GenericClass1) {
+            String name = ((GenericClass1) genericClass).getName();
+            Log.e(TAG, "foo10 ((GenericClass1) genericClass).getName()：" + name);
+        }
     }
 }
