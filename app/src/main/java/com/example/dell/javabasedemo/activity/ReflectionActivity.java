@@ -266,7 +266,11 @@ public class ReflectionActivity extends BaseActivity {
         scoreField.set(student, 50);
         int score = scoreField.getInt(student);
         Log.e(TAG, "fieldMethodUse scoreField.getInt(student):" + score);
-
+        Field tagField = aClass.getDeclaredField("TAG");
+        tagField.setAccessible(true);
+        String tagstr = (String) tagField.get(student);
+        //String tagstr = (String) tagField.get(null);
+        Log.e(TAG, "fieldMethodUse  tagField.get(student):" + tagstr);
     }
 
     /**

@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.dell.javabasedemo.activity.AnnotationActivity;
+import com.example.dell.javabasedemo.activity.AnnotationProcessorActivity;
 import com.example.dell.javabasedemo.activity.BitOperationActivity;
+import com.example.dell.javabasedemo.activity.ClassloaderActivity;
 import com.example.dell.javabasedemo.activity.CollectionActivity;
 import com.example.dell.javabasedemo.activity.GenericActivity;
 import com.example.dell.javabasedemo.activity.QueueActivity;
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bt_reflection;
     private Button bt_annotation;
     private Button bt_generic;
+    private Button bt_annotation_Processor;
+    private Button bt_classloader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_reflection = (Button) findViewById(R.id.bt_reflection);
         bt_generic = (Button) findViewById(R.id.bt_generic);
         bt_annotation = (Button) findViewById(R.id.bt_annotation);
+        bt_annotation_Processor = (Button) findViewById(R.id.bt_annotation_Processor);
+        bt_classloader = (Button) findViewById(R.id.bt_classloader);
 
         bt_bit_operations.setOnClickListener(this);
         bt_collection.setOnClickListener(this);
@@ -42,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_reflection.setOnClickListener(this);
         bt_generic.setOnClickListener(this);
         bt_annotation.setOnClickListener(this);
+        bt_annotation_Processor.setOnClickListener(this);
+        bt_classloader.setOnClickListener(this);
     }
 
     @Override
@@ -64,6 +72,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_annotation:
                 startActivity(new Intent(mContext, AnnotationActivity.class));
+                break;
+            case R.id.bt_annotation_Processor:
+                startActivity(new Intent(mContext, AnnotationProcessorActivity.class));
+                break;
+            case R.id.bt_classloader:
+                startActivity(new Intent(mContext, ClassloaderActivity.class));
                 break;
         }
     }
