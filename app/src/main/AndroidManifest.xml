@@ -28,6 +28,8 @@
         <activity android:name=".activity.GenericActivity" />
         <activity android:name=".activity.AnnotationProcessorActivity" />
         <activity android:name=".activity.ClassloaderActivity" />
+        <activity android:name=".activity.CASActivity" />
+        <activity android:name=".activity.AtomicActivity" />
 
         <meta-data android:value="5cb5bbc13fc19512490013f7" android:name="UMENG_APPKEY"/>
         <meta-data android:value="by" android:name="UMENG_CHANNEL"/>

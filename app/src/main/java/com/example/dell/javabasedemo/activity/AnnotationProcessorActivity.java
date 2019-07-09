@@ -10,7 +10,9 @@ import com.example.dell.javabasedemo.R;
  * 创建日期：2019/5/21
  * 作者:baiyang
  * 参考https://blog.csdn.net/qq_20521573/article/details/82321755
+ * https://www.race604.com/annotation-processing/
  * https://blog.csdn.net/u013045971/article/details/53509237
+ * https://blog.csdn.net/wzgiceman/article/details/54580745
  */
 public class AnnotationProcessorActivity extends BaseActivity {
 

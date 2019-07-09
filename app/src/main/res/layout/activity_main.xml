@@ -10,7 +10,9 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="18dp"
-        android:paddingRight="18dp">
+        android:paddingRight="18dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
 
         <Button
             android:id="@+id/bt_bit_operations"
@@ -59,12 +61,28 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Java注解处理器(@Annotation)" />
+
         <Button
             android:id="@+id/bt_classloader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Java类加载器(ClassLoader)" />
+
+        <Button
+            android:id="@+id/bt_cas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="无锁CAS与Unsafe类"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/bt_Atomic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="原子操作类(Atomic系列)"
+              />
 
     </LinearLayout>
 </ScrollView>

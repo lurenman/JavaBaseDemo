@@ -9,7 +9,9 @@ import android.widget.Button;
 
 import com.example.dell.javabasedemo.activity.AnnotationActivity;
 import com.example.dell.javabasedemo.activity.AnnotationProcessorActivity;
+import com.example.dell.javabasedemo.activity.AtomicActivity;
 import com.example.dell.javabasedemo.activity.BitOperationActivity;
+import com.example.dell.javabasedemo.activity.CASActivity;
 import com.example.dell.javabasedemo.activity.ClassloaderActivity;
 import com.example.dell.javabasedemo.activity.CollectionActivity;
 import com.example.dell.javabasedemo.activity.GenericActivity;
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bt_generic;
     private Button bt_annotation_Processor;
     private Button bt_classloader;
+    private Button bt_cas;
+    private Button bt_Atomic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_annotation = (Button) findViewById(R.id.bt_annotation);
         bt_annotation_Processor = (Button) findViewById(R.id.bt_annotation_Processor);
         bt_classloader = (Button) findViewById(R.id.bt_classloader);
+        bt_cas = (Button) findViewById(R.id.bt_cas);
+        bt_Atomic = (Button) findViewById(R.id.bt_Atomic);
 
         bt_bit_operations.setOnClickListener(this);
         bt_collection.setOnClickListener(this);
@@ -50,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_annotation.setOnClickListener(this);
         bt_annotation_Processor.setOnClickListener(this);
         bt_classloader.setOnClickListener(this);
+        bt_cas.setOnClickListener(this);
+        bt_Atomic.setOnClickListener(this);
     }
 
     @Override
@@ -78,6 +86,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_classloader:
                 startActivity(new Intent(mContext, ClassloaderActivity.class));
+                break;
+            case R.id.bt_cas:
+                startActivity(new Intent(mContext, CASActivity.class));
+                break;
+            case R.id.bt_Atomic:
+                startActivity(new Intent(mContext, AtomicActivity.class));
                 break;
         }
     }
